@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #052235, #340945);
+    overflow: hidden; 
+  }
+  
+  .loader {
+    position: relative;
+    width: 8vw; 
+    height: 8vw;
+  }
+  
+  .raindrop {
+    position: absolute;
+    width: 2vw; 
+    height: 2vw;
+    background: #fff;
+    border-radius: 50%;
+    transform-origin: center bottom;
+    animation: drop 1s infinite ease-in-out;
+  }
+  
+  .raindrop:nth-child(2) {
+    left: 3vw;
+    animation-delay: 0.2s;
+  }
+  
+  .raindrop:nth-child(3) {
+    left: 6vw;
+    animation-delay: 0.4s;
+  }
+  
+  .loading-text {
+    color: #fff;
+    margin-top: 2vh;
+  
+  .logo-container {
+    margin-top: 2vh;
+  }
+  
+  .logo-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 10vh; 
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(2vh) scale(0.8); 
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+  
